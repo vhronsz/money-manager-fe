@@ -1,4 +1,11 @@
+'use client'
+
 const LoginPage = () => {
+  const login = (data)=>{
+    const username = data.get("username");
+    const password = data.get("password");
+
+  }
   return (
     <main className="flex h-screen flex-col items-center justify-center">
 
@@ -7,16 +14,19 @@ const LoginPage = () => {
           Login
         </div>
 
-        <div className="">
-          Username
-          <input type="text"/>
-        </div>
-        <div className="">
-          Password
-        </div>
-
+        <form action={(data)=>{login(data)}}>
+          <div className="">
+            Username
+            <input className="" type="text" name="username"/>
+          </div>
+          <div className="">
+            Password
+            <input className="" type="password" name="password"/>
+          </div>
+          <button type="submit">login</button>
+        </form>
       </div>
- 
+
     </main>
   );
 }
