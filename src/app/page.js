@@ -1,11 +1,37 @@
 'use client'
-
+import axios from "axios";
 const LoginPage = () => {
-  const login = (data)=>{
+  const login = async (data) => {
     const username = data.get("username");
     const password = data.get("password");
-
+    try {
+      // const response = await fetch("http://localhost:5000/auth/login", {
+      //   method: "POST",
+      //   headers: {
+      //     Accept: "application/json",
+      //     "Content-Type": "application/json;charset=UTF-8",
+      //   },
+      //   body: JSON.stringify({
+      //     username: username,
+      //     password: password,
+      //   }),
+      // });
+      const axiosPost = await axios({
+        method: "POST",
+        url: "http://localhost:5000/auth/login",
+        data: {
+          username: username,
+          password: password
+        },
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+    } catch (e) {
+      console.error(e);
+    }
   }
+
   return (
     <main className="flex h-screen flex-col items-center justify-center">
 
@@ -14,14 +40,14 @@ const LoginPage = () => {
           Login
         </div>
 
-        <form action={(data)=>{login(data)}}>
+        <form action={(data) => { login(data) }}>
           <div className="">
             Username
-            <input className="" type="text" name="username"/>
+            <input className="" type="text" name="username" />
           </div>
           <div className="">
             Password
-            <input className="" type="password" name="password"/>
+            <input className="" type="password" name="password" />
           </div>
           <button type="submit">login</button>
         </form>
