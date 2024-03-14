@@ -5,18 +5,7 @@ const LoginPage = () => {
     const username = data.get("username");
     const password = data.get("password");
     try {
-      // const response = await fetch("http://localhost:5000/auth/login", {
-      //   method: "POST",
-      //   headers: {
-      //     Accept: "application/json",
-      //     "Content-Type": "application/json;charset=UTF-8",
-      //   },
-      //   body: JSON.stringify({
-      //     username: username,
-      //     password: password,
-      //   }),
-      // });
-      const axiosPost = await axios({
+      const response = await axios({
         method: "POST",
         url: "http://localhost:5000/auth/login",
         data: {
