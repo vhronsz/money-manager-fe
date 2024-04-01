@@ -1,5 +1,7 @@
 'use client'
 import axios from "axios";
+import style from "../Login.module.css";
+
 const LoginPage = () => {
   const login = async (data) => {
     const username = data.get("username");
@@ -23,22 +25,21 @@ const LoginPage = () => {
 
   return (
     <main className="flex h-screen flex-col items-center justify-center">
-
-      <div className="w-1/4 h-2/4 flex flex-col items-center bg-slate-200/20 border-2 border-gray-100 rounded-md">
+      <div className={style.loginBox}>
         <div className="text-3xl pt-7 pb-7 w-full text-center">
           Login
         </div>
 
-        <form action={(data) => { login(data) }}>
-          <div className="">
-            Username
-            <input className="" type="text" name="username" />
+        <form className="" action={(data) => { login(data) }}>
+          <div className="ml-2.5 mr-2.5 h-8 border">
+            <input className="h-full w-full" type="text" name="username" placeholder="Username" />
           </div>
-          <div className="">
-            Password
-            <input className="" type="password" name="password" />
+
+          <div className="ml-2.5 mr-2.5 h-8 border">
+            <input className="h-full w-full" type="password" name="password" placeholder="Password" />
           </div>
-          <button type="submit">login</button>
+
+          <button type="submit" className="">Login</button>
         </form>
       </div>
 
