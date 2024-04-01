@@ -1,6 +1,6 @@
 'use client'
 import axios from "axios";
-const LoginPage = () => {
+const Loginpage = () => {
   const login = async (data) => {
     const username = data.get("username");
     const password = data.get("password");
@@ -46,4 +46,4 @@ const LoginPage = () => {
   );
 }
 
-export default LoginPage;
+export default Loginpage;
