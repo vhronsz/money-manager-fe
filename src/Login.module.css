@@ -1,9 +1,0 @@
-.loginBox{
-    width: 37.5%;
-    max-width: 500px;
-    height: 37.5vh;
-    max-height: 500px;
-    border: 1px solid gray;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}

@@ -1,6 +1,6 @@
 'use client'
 import axios from "axios";
-import style from "../Login.module.css";
+import style from "./Login.module.css";
 
 const LoginPage = () => {
   const login = async (data) => {
@@ -30,16 +30,17 @@ const LoginPage = () => {
           Login
         </div>
 
-        <form className="" action={(data) => { login(data) }}>
-          <div className="ml-2.5 mr-2.5 h-8 border">
-            <input className="h-full w-full" type="text" name="username" placeholder="Username" />
+        <form className="w-full h-full" action={(data) => { login(data) }}>
+          <div className={style.inputContainer}>
+            <input className={style.input} type="text" name="username" placeholder="Username" />
           </div>
 
-          <div className="ml-2.5 mr-2.5 h-8 border">
-            <input className="h-full w-full" type="password" name="password" placeholder="Password" />
+          <div className={style.inputContainer}>
+            <input className={style.input}  type="password" name="password" placeholder="Password" />
           </div>
 
-          <button type="submit" className="">Login</button>
+          <button type="submit" className={style.button}>Login</button>
+        
         </form>
       </div>
 

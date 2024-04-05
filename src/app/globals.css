@@ -17,6 +17,7 @@
 }
 
 body {
+  color: theme('colors.onyx');
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient(
       to bottom,
