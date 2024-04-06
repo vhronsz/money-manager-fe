@@ -40,7 +40,6 @@ const LoginPage = () => {
           </div>
 
           <div className={style.buttonContainer}>
-            Testing button
           <button type="submit" className={style.button}>Login</button>
           </div>
         </form>
