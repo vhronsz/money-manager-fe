@@ -39,8 +39,10 @@ const LoginPage = () => {
             <input className={style.input}  type="password" name="password" placeholder="Password" />
           </div>
 
+          <div className={style.buttonContainer}>
+            Testing button
           <button type="submit" className={style.button}>Login</button>
-        
+          </div>
         </form>
       </div>
 

@@ -38,6 +38,11 @@
     border: 2px solid theme('colors.silver');
 }
 
-.button{
+.buttonContainer{
     border: 1px solid black;
+
+}
+
+.button{
+    border: 1px solid blue;
 }
