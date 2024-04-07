@@ -1,14 +1,30 @@
-.container{
+#navigationMenu{
+    background-color: theme("colors.onyx");
     width: 15%;
-    border: 1px solid black;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.menu{
+#menuContainer{
+    border-top: 3px solid theme("colors.light");
+    margin-top: 20px;
     width: 100%;
-    height: 5%;
-    border: 1px solid black;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    padding-top: 5px;
+    width: 100%;
+    height: 10%;
+    color: theme("colors.light");
+    font-size: 1.15em;
+    border: 1px solid blue  ;
+}
+
+.menu:hover{
+    cursor: pointer;
 }
