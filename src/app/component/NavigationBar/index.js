@@ -10,7 +10,9 @@ const NavigationBar = () => {
             <div id={style.line}></div>
             <div id={style.menuContainer}>
                 <a className={style.menu} href="/homepage">Home</a>
-                <a className={style.menu} href="/manage">Manage</a>
+                <a className={style.menu} href="/expense">Expense</a>
+                <a className={style.menu} href="/fund">Fund</a>
+                <a className={style.menu} href="/config">Config</a>
             </div>
         </nav>
     );

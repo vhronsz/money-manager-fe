@@ -5,7 +5,7 @@ const Homepage = () => {
     return (
         <div className="w-screen h-screen flex">
             <NavigationBar/>
-            <div>Homepage</div>
+            <div></div>
         </div>
 
     );
