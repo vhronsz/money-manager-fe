@@ -4,12 +4,14 @@ import style from "./Login.module.css";
 
 const LoginPage = () => {
   const login = async (data) => {
+    const URL = `${process.env.NEXT_PUBLIC_SERVICE_URL}/auth/login`;
     const username = data.get("username");
     const password = data.get("password");
+    console.log(URL);
     try {
       const response = await axios({
         method: "POST",
-        url: "http://localhost:5000/auth/login",
+        url: URL,
         data: {
           username: username,
           password: password
