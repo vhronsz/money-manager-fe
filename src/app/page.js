@@ -1,6 +1,6 @@
 'use client'
 import axios from "axios";
-import style from "./Login.module.css";
+import style from "./login.module.css";
 
 const LoginPage = () => {
   const login = async (data) => {
