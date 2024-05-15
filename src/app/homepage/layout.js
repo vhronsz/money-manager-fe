@@ -1,5 +1,4 @@
 "use client"
-
 import NavigationBar from "../component/navigationBar";
 
 export default function HomepageLayout({ children }) {
