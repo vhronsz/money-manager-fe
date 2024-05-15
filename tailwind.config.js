@@ -10,6 +10,7 @@ module.exports = {
       'silver': "#A9A9A9",
       'onyx': "#3E3E3E",
       'light': "#F1F1F1",
+      'dark': "#1f1f1f"
     },
     extend: {
       backgroundImage: {

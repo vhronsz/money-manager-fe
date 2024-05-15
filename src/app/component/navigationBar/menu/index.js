@@ -6,9 +6,8 @@ const Menu = (props) => {
     const { title, base, dest } = props;
 
     const navigate = () => {
-        const pathName = `${dest}`;
-        console.log(pathName);
-        router.push(`/${base}/${dest}/`);
+        const pathName = `/${base}/${dest}/`;
+        router.push(pathName);
     }
 
     return (

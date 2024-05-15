@@ -1,8 +1,9 @@
 import style from "./navigationBar.module.css";
 import Menu from "./menu";
+import Line from "../utils/LineBar";
 
 const NavigationBar = (props) => {
-    const Logout = () => {
+    const LogoutButton = () => {
         const logout = () => {
             console.log("Logout");
         }
@@ -19,7 +20,7 @@ const NavigationBar = (props) => {
             <div className={style.section} id={style.topSection}>
                 Money Manager
             </div>
-
+            <Line/>
             <div className={style.section} id={style.middleSection}>
                 <Menu title={"Transactions"} base={"homepage"} dest={"transaction"} />
                 <Menu title={"Funds"} base={"homepage"} dest={"fund"} />
@@ -27,7 +28,8 @@ const NavigationBar = (props) => {
             </div>
 
             <div className={style.section} id={style.bottomSection}>
-                <Logout />
+                {/* <LogoutButton /> */}
+                footer
             </div>
         </div>
     );
