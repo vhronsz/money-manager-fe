@@ -3,11 +3,12 @@ import axios from "axios";
 import style from "./login.module.css";
 
 const LoginPage = () => {
+
   const login = async (data) => {
     const URL = `${process.env.NEXT_PUBLIC_SERVICE_URL}/auth/login`;
     const username = data.get("username");
     const password = data.get("password");
-    console.log(URL);
+
     try {
       const response = await axios({
         method: "POST",
@@ -18,7 +19,8 @@ const LoginPage = () => {
         },
         headers: {
           "Content-Type": "application/json"
-        }
+        },
+        withCredentials: true
       });
     } catch (e) {
       console.error(e);
@@ -38,11 +40,11 @@ const LoginPage = () => {
           </div>
 
           <div className={style.inputContainer}>
-            <input className={style.input}  type="password" name="password" placeholder="Password" />
+            <input className={style.input} type="password" name="password" placeholder="Password" />
           </div>
 
           <div className={style.buttonContainer}>
-          <button type="submit" className={style.button}>Login</button>
+            <button type="submit" className={style.button}>Login</button>
           </div>
         </form>
       </div>
