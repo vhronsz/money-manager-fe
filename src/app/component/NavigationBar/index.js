@@ -1,4 +1,4 @@
-import style from "./navigationBar.module.css";
+import style from "./style.module.css";
 import Menu from "./menu";
 import Line from "../utils/LineBar";
 
@@ -29,7 +29,7 @@ const NavigationBar = (props) => {
 
             <div className={style.section} id={style.bottomSection}>
                 {/* <LogoutButton /> */}
-                footer
+                Footer
             </div>
         </div>
     );

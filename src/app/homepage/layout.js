@@ -1,5 +1,5 @@
 "use client"
-import NavigationBar from "../component/navigationBar";
+import NavigationBar from "../component/NavigationBar";
 
 export default function HomepageLayout({ children }) {
   return (
