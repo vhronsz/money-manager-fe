@@ -1,8 +1,10 @@
 import style from "./style.module.css";
 
-const Notification = ()=>{
+const Notification = (props)=>{
+    const {type, message} = props;
+
     return(
-        <div id={style.container}>
+        <div className={"bg-[theme(colors.danger)]"} id={style.container}>
             Notif nih
         </div>
     );

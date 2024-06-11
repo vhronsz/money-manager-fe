@@ -1,6 +1,6 @@
 'use client'
 import axios from "axios";
-import style from "./login.module.css";
+import style from "./style.module.css";
 import Master from "./Master";
 import {useRouter} from "next/navigation";
 
