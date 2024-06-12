@@ -3,6 +3,7 @@ import axios from "axios";
 import style from "./style.module.css";
 import Master from "./Master";
 import {useRouter} from "next/navigation";
+import Notification from "@/app/component/Notification";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -35,6 +36,7 @@ const LoginPage = () => {
 
   return (
       <main className="flex h-screen flex-col items-center justify-center">
+        <Notification/>
         <div className={style.loginBox}>
           <div className="text-3xl pt-7 pb-7 w-full text-center">
             Login
