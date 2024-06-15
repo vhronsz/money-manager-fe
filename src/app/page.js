@@ -31,14 +31,12 @@ const LoginPage = () => {
       router.push("/homepage");
     } catch (e) {
       const errorMessage = e.response.data ? e.response.data.message : e;
-      console.log(errorMessage);
       alert(errorMessage);
     }
   }
 
   return (
       <main className="flex h-screen flex-col items-center justify-center">
-        <Notification show={show} setShow={setShow}/>
         <div className={style.loginBox}>
           <div className="text-3xl pt-7 pb-7 w-full text-center">
             Login
