@@ -2,7 +2,7 @@
 import axios from "axios";
 import style from "./style.module.css";
 import {useRouter} from "next/navigation";
-import Notification from "@/app/component/Notification";
+import Notification from "@/app/Component/Notification";
 import {useState} from "react";
 
 const LoginPage = () => {
