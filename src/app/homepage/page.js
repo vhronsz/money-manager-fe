@@ -8,7 +8,8 @@ const Homepage = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className={"flex"}>
+			<BasicContainer/>
 			<BasicContainer/>
 		</div>
 	);
