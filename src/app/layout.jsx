@@ -6,7 +6,7 @@ const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
 	title: "Money manager",
-	description: "Manage Expense and balance",
+	description: "Manage expense and balance",
 };
 
 export default function RootLayout({children}) {

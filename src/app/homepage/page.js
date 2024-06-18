@@ -1,17 +1,16 @@
 'use client';
 import {useEffect, useState} from "react";
-import WidgetMain from "./Widget";
+import BasicContainer from "./Component/BasicContainer";
 
 const Homepage = () => {
 	useEffect(() => {
 		//Load user config or default
 	}, []);
 
-	const Widget = (props) => {
-
-	}
 	return (
-		<WidgetMain/>
+		<div>
+			<BasicContainer/>
+		</div>
 	);
 }
 

@@ -25,8 +25,8 @@ const NavigationBar = (props) => {
 			<Line/>
 			<div className={style.section} id={style.middleSection}>
 				<Menu title={"Transactions"} base={"Homepage"} dest={"transaction"}/>
-				<Menu title={"Funds"} base={"Homepage"} dest={"Fund"}/>
-				<Menu title={"Expenses"} base={"Homepage"} dest={"Expense"}/>
+				<Menu title={"Funds"} base={"Homepage"} dest={"fund"}/>
+				<Menu title={"Expenses"} base={"Homepage"} dest={"expense"}/>
 			</div>
 
 			<div className={style.section} id={style.bottomSection}>

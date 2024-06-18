@@ -1,5 +1,4 @@
 const WidgetMain = () => {
-
 	return (
 		<div>Widget</div>
 	);
