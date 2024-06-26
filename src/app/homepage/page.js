@@ -1,6 +1,7 @@
 'use client';
 import {useEffect, useState} from "react";
 import BasicContainer from "./Component/BasicContainer";
+import style from "./style.module.css";
 
 const Homepage = () => {
 	useEffect(() => {
@@ -8,9 +9,7 @@ const Homepage = () => {
 	}, []);
 
 	return (
-		<div className={"flex"}>
-			<BasicContainer/>
-			<BasicContainer/>
+		<div className={"flex"} id={style.container}>
 		</div>
 	);
 }
