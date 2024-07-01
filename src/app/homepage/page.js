@@ -10,6 +10,7 @@ const Homepage = () => {
 
 	return (
 		<div className={"flex"} id={style.container}>
+			<BasicContainer width={3} height={5}/>
 		</div>
 	);
 }
