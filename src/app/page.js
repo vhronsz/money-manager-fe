@@ -46,7 +46,7 @@ const LoginPage = () => {
 	return (
 		<main className="flex h-screen flex-col items-center justify-center">
 			<Notification
-				show={show}
+				show={true}
 				setShow={setShow}
 				title={title}
 				body={body}
