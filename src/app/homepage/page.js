@@ -1,7 +1,8 @@
 'use client';
 import {useEffect, useState} from "react";
-import BasicContainer from "../Component/BasicContainer";
 import style from "./style.module.css";
+
+import Balance from "@/app/homepage/Component/Balance";
 
 const Homepage = () => {
 	useEffect(() => {
@@ -10,7 +11,7 @@ const Homepage = () => {
 
 	return (
 		<div className={"flex"} id={style.container}>
-			<BasicContainer width={7} height={1.5} spacing={3} topRow={true}/>
+			<Balance/>
 		</div>
 	);
 }

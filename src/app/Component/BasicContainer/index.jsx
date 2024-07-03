@@ -2,7 +2,7 @@ import style from './style.module.css';
 
 const BasicComponent = (props) => {
 	const {width, height, isCenter, spacing, topRow} = props;
-	const {component} = props;
+	const {Component} = props;
 	const size = 1;
 
 	const getSpacing = () => {
@@ -10,8 +10,9 @@ const BasicComponent = (props) => {
 		let topOrBottomMargin = topRow ? '5px' : `${spacing * 2}%`;
 		return `${topOrBottomMargin} ${leftAndRightMargin} ${topOrBottomMargin} ${leftAndRightMargin}`;
 	}
+
 	const getComponent = () => {
-		return component ? component : <div>Container</div>
+		return Component ? <Component/> : <div>Container</div>
 	}
 
 	const getWidth = () => {
@@ -21,7 +22,6 @@ const BasicComponent = (props) => {
 	const getHeight = () => {
 		return height * 10;
 	}
-
 	return (
 		<div id={style.container} style={{
 			width: `${getWidth()}%`,
