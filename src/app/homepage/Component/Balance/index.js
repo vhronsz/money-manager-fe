@@ -2,14 +2,22 @@ import BasicContainer from "@/app/Component/BasicContainer";
 import style from "./style.module.css";
 
 const Balance = (props) => {
-	const {balance = '1.000.00'} = props;
-	const {currency = 'IDR'} = props;
+
+	let {balance = '1000'} = props.data;
+	const {currency = 'IDR'} = props.data;
+
 	const Component = () => {
 		return (
 			<div id={style.balanceContainer}>
-				Your Balance
-				<br/>
-				{currency} {balance}
+
+				<div className={style.content}>
+					Your Balance
+				</div>
+
+				<div className={style.content}>
+					{currency} {balance}
+				</div>
+
 			</div>
 		);
 	}

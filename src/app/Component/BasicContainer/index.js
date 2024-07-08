@@ -1,9 +1,8 @@
 import style from './style.module.css';
 
 const BasicComponent = (props) => {
-	const {width, height, isCenter, spacing, topRow} = props;
+	const {width = 1, height = 1, spacing = 1, topRow = false} = props;
 	const {Component} = props;
-	const size = 1;
 
 	const getSpacing = () => {
 		let leftAndRightMargin = `${spacing * 5}%`;
@@ -22,6 +21,7 @@ const BasicComponent = (props) => {
 	const getHeight = () => {
 		return height * 10;
 	}
+
 	return (
 		<div id={style.container} style={{
 			width: `${getWidth()}%`,
